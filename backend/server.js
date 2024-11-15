@@ -354,7 +354,7 @@ async function scrapeMenuData() {
 }
 
 // Schedule the scraping to run once a day at midnight
-cron.schedule('05 9 * * *', scrapeMenuData)
+cron.schedule('15 12 * * *', scrapeMenuData)
 
 // Set up HTTP server
 const server = http.createServer(async (req, res) => {
